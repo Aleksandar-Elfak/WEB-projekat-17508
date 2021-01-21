@@ -1,0 +1,292 @@
+* {
+	box-sizing: border-box;
+	font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+}
+
+body {
+	display: flex;
+	border: 1px solid black;
+	background-size: contain;
+	margin: 0%;
+	background-color: rgb(49, 49, 49);
+}
+
+.container {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+}
+
+.top {
+	display: flex;
+	margin: 10px;
+	height: 100px;
+	background-image: url(/img/banner1.png);
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
+	justify-content: center;
+	align-items: center;
+	font-size: 300%;
+}
+
+.bot {
+	display: flex;
+	flex-direction: column;
+	padding: 0px;
+}
+
+.categories {
+	position: sticky;
+	top: 0;
+	list-style-type: none;
+	background-color: grey;
+	padding: 0px;
+	text-align: center;
+	margin: 0px;
+	width: 100%;
+}
+
+.link {
+	color: black;
+}
+
+.categorySwitch {
+	font-size: 30px;
+	display: inline-block;
+	background-color: grey;
+	padding-right: 20px;
+	padding-left: 20px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+.category {
+	font-size: 30px;
+	display: inline-block;
+	background-color: grey;
+	padding-right: 20px;
+	padding-left: 20px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+.category:hover {
+	background-color: rgba(255, 255, 255, 0.329);
+	scale: 1.1;
+}
+
+.botbot {
+	display: flex;
+	flex-direction: column;
+}
+
+.list {
+	font-size: 25px;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.movieDisplay {
+	background-color: rgba(0, 0, 0, 0.342);
+	color: rgb(170, 170, 170);
+	display: flex;
+	flex-direction: row;
+	margin: 3px;
+	border: 3px solid rgba(255, 0, 0, 0.205);
+}
+
+.movieDisplay:hover {
+	color: rgba(255, 255, 255, 0.795);
+}
+
+.info {
+	display: flex;
+	flex-direction: column;
+	width: 700px;
+}
+
+.img {
+	height: 250px;
+	width: 170px;
+	margin-right: 20px;
+	border-right: 3px solid rgba(255, 0, 0, 0.205);
+}
+
+.movieName {
+	font-size: 30px;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	padding-left: 20px;
+}
+
+.movieDesc {
+	width: 100%;
+	flex-grow: 1;
+}
+
+.lenSco {
+	padding-top: 10px;
+	display: flex;
+	flex-direction: row;
+}
+
+.len {
+	padding-right: 30px;
+	width: max-content;
+}
+
+.score {
+	width: max-content;
+}
+
+a {
+	text-decoration: none;
+}
+
+.form {
+	margin: 20px;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.formCategory {
+	border: 3px solid darkred;
+	display: flex;
+	flex-direction: column;
+	color: rgba(240, 248, 255, 0.705);
+	margin-right: 20px;
+}
+
+.formCategoryName {
+	font-size: 25px;
+	margin-bottom: 20px;
+	text-align: center;
+	padding-top: 20px;
+}
+
+.formCategoryDesc {
+	font-size: 20px;
+	width: 500px;
+	text-align: center;
+	flex-grow: 1;
+	padding: 20px;
+}
+
+.formMovie {
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+}
+
+.movieEdit {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.movieData {
+	display: flex;
+	flex-direction: column;
+	width: 500px;
+}
+
+.editName {
+	font-size: 25px;
+	background-color: rgba(39, 39, 39, 0.493);
+	color: rgba(255, 255, 255, 0.438);
+	border: 1px solid darkred;
+}
+
+.editDesc {
+	font-size: 20px;
+	flex-grow: 1;
+	background-color: rgba(39, 39, 39, 0.493);
+	color: rgba(255, 255, 255, 0.438);
+	border: 1px solid darkred;
+	resize: none;
+}
+
+.editOther {
+	display: flex;
+	flex-wrap: wrap;
+	border: 1px solid darkred;
+	border-bottom: 0px;
+	flex-direction: column;
+}
+
+.editOtherOther {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.editScore {
+	font-size: 20px;
+	background-color: rgba(39, 39, 39, 0.493);
+	color: rgba(255, 255, 255, 0.438);
+	border: 0px;
+	width: 160px;
+	border-right: 1px solid darkred;
+	border-bottom: 1px solid darkred;
+}
+
+.editLength {
+	font-size: 20px;
+	background-color: rgba(39, 39, 39, 0.493);
+	color: rgba(255, 255, 255, 0.438);
+	border: 0px;
+	border-right: 1px solid darkred;
+	border-bottom: 1px solid darkred;
+	width: 188px;
+}
+
+.id {
+	font-size: 20px;
+	background-color: rgba(39, 39, 39, 0.493);
+	color: rgba(255, 255, 255, 0.438);
+	border: 0px;
+	border-right: 0px;
+	border-bottom: 1px solid darkred;
+	width: 150px;
+}
+
+.editImg {
+	font-size: 20px;
+	background-color: rgba(39, 39, 39, 0.493);
+	color: rgba(255, 255, 255, 0.438);
+	border: 0px;
+	border-bottom: 1px solid darkred;
+}
+
+.movieButtons {
+	display: flex;
+	flex-direction: column;
+}
+
+.movieButton {
+	background-color: rgba(39, 39, 39, 0.493);
+	color: rgba(255, 255, 255, 0.438);
+	font-size: 30px;
+	flex-grow: 1;
+	border: 0px;
+}
+
+.movieButton:hover {
+	color: rgba(255, 255, 255, 0.747);
+}
+
+.deleteBtn {
+	background-color: rgba(39, 39, 39, 0.493);
+	color: rgba(255, 255, 255, 0.438);
+	flex-grow: 1;
+	border: 0px;
+	width: 200px;
+	font-size: 20px;
+}
+
+.comboBox {
+	background-color: rgba(39, 39, 39, 0.493);
+	color: rgba(255, 255, 255, 0.438);
+	font-size: 30px;
+	flex-grow: 1;
+	border: 0px;
+}
